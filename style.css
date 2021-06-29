@@ -1,1 +1,93 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html {
+  height: calc(100vh - 1px);
+}
+
+body {
+  background-color: #eae9e4;
+  color: #1c1717;
+}
+
+.menu {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
+
+.wrapper {
+  height: 84vh;
+  margin: 8vh 40px;
+}
+
+.wrapper .content {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper .content .item-1, .wrapper .content .item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper .content .item-1 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding: 0 0 0 40px;
+}
+
+.wrapper .content .item-2 {
+  width: 100%;
+  padding: 20px 40px 40px 40px;
+}
+
+h2 {
+  margin: 20px 0 15px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+button {
+  width: 175px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 940px) {
+  .wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .item-1 {
+    width: 90% !important;
+  }
+  .item-2 {
+    width: 90% !important;
+    padding: 20px 40px 40px 40px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
